@@ -1,0 +1,42 @@
+
+.bouncing-ball-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height:300px;
+}
+
+.bouncing-ball-container .ball {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    /* 后两个属性是控制循环和动画结束后反向执行 */
+    animation: ball-falling 0.5s ease-in infinite alternate;
+}
+
+.bouncing-ball-container .ground {
+    width: 300px;
+    height: 15px;
+    background-color: #fff;
+}
+
+/* 
+            弹跳动画
+            接近地面时横向挤压
+            接触地面时纵向挤压
+        */
+@keyframes ball-falling {
+    0% {
+        transform: translateY(-200px) scale(1, 1);
+    }
+
+    90% {
+        transform: scale(0.8, 1.2);
+    }
+
+    100% {
+        transform: translateY(0) scale(1.2, 0.8);
+    }
+}
