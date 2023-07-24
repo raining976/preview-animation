@@ -61,3 +61,13 @@ a {
     text-align: center;
     cursor: pointer;
 }
+.container{
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    height: 20vh;
+}
