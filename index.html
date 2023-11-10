@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/2-light.css">
     <link rel="stylesheet" href="./style/3-rotate-cube.css">
     <link rel="stylesheet" href="./style/4-snowing.css">
+    <link rel="stylesheet" href="./style/5-particle.css">
 </head>
 
 <body>
@@ -20,50 +21,66 @@
             <li><a href="#2">2-探照灯</a></li>
             <li><a href="#3">3-旋转方块</a></li>
             <li><a href="#4">4-下雪动画</a></li>
+            <li><a href="#5">5-canvas实现粒子动画</a></li>
         </ul>
     </div>
     <div class="h">
-        <h1 class="title" id="1">1-弹跳小球</h1>
-        <div class="bouncing-ball-container container">
-            <div class="ball"></div>
-            <div class="ground"></div>
-        </div>
-        <h1 class="title" id="2">2-探照灯</h1>
-        <div class="light-container container">
-            <h1 class="text">探照灯，照亮你的美～</h1>
-        </div>
-        <h1 class="title" id="3">3-旋转方块</h1>
-        <div class="cube-container container">
-            <div class="cube">
-                <div class="box box1"></div>
-                <div class="box box2"></div>
-                <div class="box box3"></div>
-                <div class="box box4"></div>
-                <div class="box box5"></div>
-                <div class="box box6"></div>
+        <div class="item">
+            <h1 class="title" id="1">1-弹跳小球</h1>
+            <div class="bouncing-ball-container container">
+                <div class="ball"></div>
+                <div class="ground"></div>
             </div>
         </div>
-        <h1 class="title" id="4">4-下雪的动画</h1>
-        <div class="snowContainer container">
-            <div class="cloud"></div>
-            <div class="snows">
-                <span style="--i:11"></span>
-                <span style="--i:14"></span>
-                <span style="--i:12"></span>
-                <span style="--i:15"></span>
-                <span style="--i:11"></span>
-                <span style="--i:12"></span>
-                <span style="--i:11"></span>
-                <span style="--i:18"></span>
-                <span style="--i:10"></span>
-                <span style="--i:15"></span>
-                <span style="--i:13"></span>
-                <span style="--i:18"></span>
-                <span style="--i:19"></span>
-                <span style="--i:15"></span>
-                <span style="--i:13"></span>
+        <div class="item">
+            <h1 class="title" id="2">2-探照灯</h1>
+            <div class="light-container container">
+                <h1 class="text">探照灯，照亮你的美～</h1>
+            </div>
+        </div>
+        <div class="item">
+            <h1 class="title" id="3">3-旋转方块</h1>
+            <div class="cube-container container">
+                <div class="cube">
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                    <div class="box box5"></div>
+                    <div class="box box6"></div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <h1 class="title" id="4">4-下雪的动画</h1>
+            <div class="snowContainer container">
+                <div class="cloud"></div>
+                <div class="snows">
+                    <span style="--i:11"></span>
+                    <span style="--i:14"></span>
+                    <span style="--i:12"></span>
+                    <span style="--i:15"></span>
+                    <span style="--i:11"></span>
+                    <span style="--i:12"></span>
+                    <span style="--i:11"></span>
+                    <span style="--i:18"></span>
+                    <span style="--i:10"></span>
+                    <span style="--i:15"></span>
+                    <span style="--i:13"></span>
+                    <span style="--i:18"></span>
+                    <span style="--i:19"></span>
+                    <span style="--i:15"></span>
+                    <span style="--i:13"></span>
+                </div>
+            </div>
+        </div>
+        <div class="item particle">
+            <h1 class="title" id="5">5-canvas实现粒子动画</h1>
+            <div class="container particalContainer">
+                <canvas id="particleAnimation"></canvas>
             </div>
         </div>
     </div>
 </body>
 <script src="./js/index.js"></script>
+<script src="./js/5-particle.js"></script>
